@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	body{background-image : url(wood.jpg);}
+	img{
+		height: 300px;
+		width: 400px;}
+
+	div.absolute{
+		width: 400px;
+	 	height: 1px;
+	 	background-color: white;
+	 	position: absolute;
+	 	opacity: 0.5;
+	 	transition: height 1s;
+	 	bottom: 300px;
+	}
+	.absolute:hover{
+		height: 299px;
+	}
+	.siku{
+		width: 0px;
+		height: 0px;
+		border-bottom: 50px solid white;
+		border-right: 50px solid transparent;
+		position: absolute;
+	}
+</style>
+</head>
+<body>
+
+<div class="absolute"></div>
+<img src="cappucino.jpg">
+<div class="siku"></div>
+</body>
+</html>
